@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    background: rgb(239,239,239);
+    font-weight: bold;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+section{
+    line-height: 40px;
+    padding: 10px 55px;
+    border-bottom: 1px solid black;
+}
+p{
+    margin: 20px 0 20px 0;
+}
+img{
+    height: 200px;
+}
+span{
+    display: block;
+}
+footer span{
+    margin-bottom: 10px;
+}
+.main{
+    background: white;
+    width: 650px;
+    margin:10px auto;
+    padding: 60px;
+    border: 1px solid black;
+    box-shadow: 0 2px 2px black;
+    text-align: left;
+}
