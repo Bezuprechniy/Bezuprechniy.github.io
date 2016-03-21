@@ -1,40 +1,58 @@
-header,footer,
-article,aside,
-section,hgroup,nav{
-	display:block;
+header,
+footer,
+article,
+aside,
+section,
+hgroup,
+nav {
+    display: block;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: lightgrey;
-    font-family: arial, sans-serif,helvetica,tahoma;
     font-size: 14pt;
+    font-weight: normal;
+    font-family: monospace;
 }
 
-.main{
+
+.main {
     background-color: white;
     width: 1015px;
     margin: auto;
     border: 1px solid black;
 }
 
+
 /*----------header----------*/
 
-.logo{
+.logo {
     display: block;
     margin: 20px 0 20px 56px;
     font-weight: normal;
 }
+
+
 /*------------Main Menu--------------*/
-.mainMenu{
-    background-color: rgb(79,78,78);
-    height: 50px;
+
+.mainMenu ul {
+    background-color: rgb(79, 78, 78);
+    height: 45px;
     width: 90%;
     margin: auto;
 }
-.mainMenu a{
+
+.mainMenu ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.mainMenu a {
     display: block;
     height: inherit;
     width: 100px;
@@ -48,53 +66,73 @@ body{
     font-size: 12pt;
     transition: 0.5s;
 }
-.mainMenu a:nth-child(2),.mainMenu a:hover{
+
+.mainMenu a:nth-child(2),
+.mainMenu a:hover {
     outline: 1px solid white;
-    background-color: rgb(53,53,53);
+    background-color: rgb(53, 53, 53);
 }
+
+
 /*------------content---------------*/
-.sideBar{
+
+.content{
+    overflow: hidden;
+}
+
+.sideBar {
     width: 15%;
     margin: 40px 0 0 58px;
     float: left;
 }
-.sideBar a{
+
+.sideBar a {
     display: block;
     width: 180px;
     padding: 10px;
-    border: 1px solid rgb(200,200,200);
+    border: 1px solid rgb(200, 200, 200);
     text-decoration: none;
     font-size: 12pt;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
     transition: 0.5s;
 }
-.sideBar a:hover{
+
+.sideBar a:hover {
     color: black;
     background-color: lightgray;
     padding: 10px 0 10px 20px;
 }
-.imgWrapper{
+
+.imgWrapper {
     width: 600px;
     float: left;
     margin: 40px 0 20px 107px;
-    text-align: center;
+    text-align: left;
 }
-.imgWrapper img{
-    border:1px solid rgb(200,200,200);
+
+.imgWrapper img {
+    border: 1px solid rgb(200, 200, 200);
     height: 515px;
     margin-bottom: 20px;
 }
+
+.imgWrapper p{
+    padding: 20px;
+    font-size: 18px;
+}
+
 /*-----------footer--------------*/
-footer{
+
+footer {
     background-color: darkgray;
-    height: 50px;
-    width: 90%;
+    width: 914px;
     margin: 40px auto;
     text-align: right;
     line-height: 45px;
     clear: both;
 }
-.footerMenu a{
+
+.footerMenu a {
     display: block;
     height: inherit;
     width: auto;
@@ -109,6 +147,8 @@ footer{
     font-size: 12pt;
     transition: 0.5s;
 }
-.footerMenu a:nth-child(2),.footerMenu a:hover{
+
+.footerMenu a:nth-child(2),
+.footerMenu a:hover {
     border-bottom: 1px solid black;
 }
