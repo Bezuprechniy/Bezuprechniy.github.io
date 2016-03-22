@@ -20,7 +20,6 @@ body {
     font-family: monospace;
 }
 
-
 .main {
     background-color: white;
     width: 1015px;
@@ -43,7 +42,7 @@ body {
 .mainMenu ul {
     background-color: rgb(79, 78, 78);
     height: 45px;
-    width: 90%;
+    width: 1015px;
     margin: auto;
 }
 
@@ -52,7 +51,7 @@ body {
     list-style-type: none;
 }
 
-.mainMenu a {
+.mainMenu ul li a {
     display: block;
     height: inherit;
     width: 100px;
@@ -76,25 +75,32 @@ body {
 
 /*------------content---------------*/
 
-.content{
+.content {
     overflow: hidden;
 }
-.content::after{
+
+.content::after {
     content: "";
-    clear: both;
     display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
-.sideBar {
+
+
+/*--------------sideBar---------------*/
+
+.sideBar ul {
     width: 153px;
     margin: 40px 0 0 58px;
     float: left;
 }
 
-.sidebar li{
+.sidebar ul li {
     list-style: none;
 }
 
-.sideBar a {
+.sideBar ul li a {
     display: block;
     width: 180px;
     padding: 10px;
@@ -111,6 +117,9 @@ body {
     padding: 10px 0 10px 20px;
 }
 
+
+/*----------------Image&&Text-------------------*/
+
 .imgWrapper {
     width: 600px;
     float: left;
@@ -124,10 +133,11 @@ body {
     margin-bottom: 20px;
 }
 
-.imgWrapper p{
+.imgWrapper p {
     padding: 20px;
     font-size: 18px;
 }
+
 
 /*-----------footer--------------*/
 
@@ -140,17 +150,18 @@ footer {
     overflow: hidden;
 }
 
-.footerMenu{
+.footerMenu ul {
     float: left;
     position: relative;
     overflow: hidden;
 }
-.footerMenu li{
+
+.footerMenu ul li {
     list-style: none;
     float: left;
 }
 
-.footerMenu a {
+.footerMenu ul li a {
     display: block;
     height: inherit;
     width: auto;
@@ -170,7 +181,8 @@ footer {
 .footerMenu a:hover {
     border-bottom: 1px solid black;
 }
-.right{
+
+.right {
     float: right;
     margin-right: 50px;
 }
