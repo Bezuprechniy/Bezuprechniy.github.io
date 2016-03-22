@@ -81,9 +81,13 @@ body {
 }
 
 .sideBar {
-    width: 15%;
+    width: 153px;
     margin: 40px 0 0 58px;
     float: left;
+}
+
+.sidebar li{
+    list-style: none;
 }
 
 .sideBar a {
