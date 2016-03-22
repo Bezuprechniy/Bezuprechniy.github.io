@@ -79,7 +79,11 @@ body {
 .content{
     overflow: hidden;
 }
-
+.content::after{
+    content: "";
+    clear: both;
+    display: block;
+}
 .sideBar {
     width: 153px;
     margin: 40px 0 0 58px;
@@ -133,7 +137,17 @@ footer {
     margin: 40px auto;
     text-align: right;
     line-height: 45px;
-    clear: both;
+    overflow: hidden;
+}
+
+.footerMenu{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.footerMenu li{
+    list-style: none;
+    float: left;
 }
 
 .footerMenu a {
@@ -155,4 +169,8 @@ footer {
 .footerMenu a:nth-child(2),
 .footerMenu a:hover {
     border-bottom: 1px solid black;
+}
+.right{
+    float: right;
+    margin-right: 50px;
 }
