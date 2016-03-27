@@ -90,13 +90,13 @@ body {
 
 /*--------------sideBar---------------*/
 
-.sideBar ul {
-    width: 153px;
-    margin: 40px 0 0 58px;
+.sideBarWrapper {
     float: left;
+    width: 240px;
+    margin: 0 50px;
 }
 
-.sidebar ul li {
+.sideBar ul li {
     list-style: none;
 }
 
