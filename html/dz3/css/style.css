@@ -1,0 +1,139 @@
+header,
+footer,
+article,
+aside,
+section,
+hgroup,
+nav {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1{
+    padding-bottom: 10px;
+}
+
+body {
+    background: url(../img/bodyBackground.jpg) repeat-x;
+    background-color: #0c739f;
+}
+
+.main {
+    width: 998px;
+    margin: auto;
+    background: white;
+    height: 990px;
+    box-shadow: 2px 2px 2px black;
+    overflow: hidden;
+}
+
+
+/*----------header------------*/
+
+.logo {
+    float: left;
+    width: 50%;
+}
+
+.contacts {
+    float: left;
+    width: 50%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.contacts span {
+    display: block;
+}
+
+.contacts span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.country {
+    float: left;
+}
+
+.country li {
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+}
+
+
+/*---------------slider------------------*/
+
+.slider {
+    clear: both;
+    background: url(../img/slide.gif) no-repeat center center;
+    height: 240px;
+}
+
+
+/*-----------------content----------------------*/
+
+
+/*-----------------mainMenu----------------------*/
+
+.mainMenu {
+    background: #333333;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.mainMenu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.mainMenu li a {
+    display: block;
+    width: 100px;
+    height: inherit;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+}
+
+/*-------------------content------------------------*/
+
+.content{
+    overflow: hidden;
+    background: white;
+}
+
+.info{
+    float: left;
+    text-align: center;
+    border-right: 1px solid gray;
+    padding: 15px;
+    background: #edeef0;
+    height: inherit;
+}
+.news{
+    float: right;
+    text-align: center;
+    border-left: 1px solid gray;
+    padding: 15px;
+    background: #edeef0;
+}
+
+.info ul li,.news ul li{
+    padding-bottom: 10px;
+}
+
+.center{
+    width: 545px;
+    background: white;
+}
+
