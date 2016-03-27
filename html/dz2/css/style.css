@@ -77,6 +77,7 @@ body {
 
 .content {
     overflow: hidden;
+    margin: 50px 0 0 0;
 }
 
 .content::after {
@@ -94,6 +95,7 @@ body {
     float: left;
     width: 240px;
     margin: 0 50px;
+    border: 1px solid rgb(200, 200, 200);
 }
 
 .sideBar ul li {
@@ -102,13 +104,13 @@ body {
 
 .sideBar ul li a {
     display: block;
-    width: 180px;
     padding: 10px;
     border: 1px solid rgb(200, 200, 200);
     text-decoration: none;
     font-size: 12pt;
     color: rgb(200, 200, 200);
     transition: 0.5s;
+    border-bottom: none;
 }
 
 .sideBar a:hover {
@@ -121,9 +123,8 @@ body {
 /*----------------Image&&Text-------------------*/
 
 .imgWrapper {
-    width: 600px;
+    width: 625px;
     float: left;
-    margin: 40px 0 20px 107px;
     text-align: left;
 }
 
@@ -148,12 +149,15 @@ footer {
     text-align: right;
     line-height: 45px;
     overflow: hidden;
+    clear: both;
+}
+
+.footerMenu{
+    float: left;
 }
 
 .footerMenu ul {
-    float: left;
-    position: relative;
-    overflow: hidden;
+    margin: 0 30px;
 }
 
 .footerMenu ul li {
@@ -163,11 +167,8 @@ footer {
 
 .footerMenu ul li a {
     display: block;
-    height: inherit;
     width: auto;
-    height: 30px;
-    margin-left: 40px;
-    float: left;
+    margin-right: 40px;
     text-decoration: none;
     text-align: center;
     line-height: 45px;
@@ -185,4 +186,5 @@ footer {
 .right {
     float: right;
     margin-right: 50px;
+    font-size: 13px;
 }
