@@ -41,21 +41,17 @@ body {
 
 .mainMenu ul {
     background-color: rgb(79, 78, 78);
-    height: 45px;
-    width: 1015px;
-    margin: auto;
+    margin: 0 50px;
 }
 
 .mainMenu ul li {
     display: inline-block;
     list-style-type: none;
+    margin: 0 30px;
 }
 
 .mainMenu ul li a {
     display: block;
-    height: inherit;
-    width: 100px;
-    float: left;
     text-decoration: none;
     text-align: center;
     line-height: 45px;
@@ -63,6 +59,7 @@ body {
     text-shadow: 0 2px 2px black;
     font-weight: normal;
     font-size: 12pt;
+    padding: 0 10px;
     transition: 0.5s;
 }
 
@@ -110,6 +107,10 @@ body {
     font-size: 12pt;
     color: rgb(200, 200, 200);
     transition: 0.5s;
+    border-bottom: 1px solid #ccc;
+}
+
+.sideBar ul li a:last-child {
     border-bottom: none;
 }
 
@@ -125,18 +126,16 @@ body {
 .imgWrapper {
     width: 625px;
     float: left;
-    text-align: left;
-}
-
-.imgWrapper img {
     border: 1px solid rgb(200, 200, 200);
-    height: 515px;
     margin-bottom: 20px;
 }
 
-.imgWrapper p {
+.imgWrapper+article {
+    text-align: left;
     padding: 20px;
     font-size: 18px;
+    float: right;
+    width: 625px;
 }
 
 
@@ -144,15 +143,14 @@ body {
 
 footer {
     background-color: darkgray;
-    width: 914px;
-    margin: 40px auto;
+    margin: 50px;
     text-align: right;
     line-height: 45px;
     overflow: hidden;
     clear: both;
 }
 
-.footerMenu{
+.footerMenu {
     float: left;
 }
 
@@ -163,12 +161,10 @@ footer {
 .footerMenu ul li {
     list-style: none;
     float: left;
+    margin: 0 30px;
 }
 
 .footerMenu ul li a {
-    display: block;
-    width: auto;
-    margin-right: 40px;
     text-decoration: none;
     text-align: center;
     line-height: 45px;
@@ -178,9 +174,8 @@ footer {
     transition: 0.5s;
 }
 
-.footerMenu a:nth-child(2),
-.footerMenu a:hover {
-    border-bottom: 1px solid black;
+.footerMenu ul li a:hover {
+    text-decoration: underline;
 }
 
 .right {
