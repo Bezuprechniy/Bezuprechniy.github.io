@@ -13,11 +13,11 @@ nav {
     padding: 0;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-h1{
+h1 {
     padding-bottom: 10px;
 }
 
@@ -29,23 +29,34 @@ body {
 .main {
     width: 998px;
     margin: auto;
-    background: white;
-    height: 990px;
-    box-shadow: 2px 2px 2px black;
     overflow: hidden;
 }
 
 
 /*----------header------------*/
 
+header {
+    color: #0c739f;
+    background: white;
+    overflow: hidden;
+}
+
 .logo {
     float: left;
-    width: 50%;
+    width: 500px;
+    position: relative;
+    top: 11px;
+}
+
+.logo p {
+    position: absolute;
+    top: 97px;
+    left: 58px;
 }
 
 .contacts {
     float: left;
-    width: 50%;
+    width: 460px;
     text-align: right;
     margin-bottom: 20px;
 }
@@ -60,13 +71,20 @@ body {
 }
 
 .country {
-    float: left;
+    float: right;
+    width: 369px;
+    font-size: 11px;
+    text-align: center;
 }
 
 .country li {
     list-style-type: none;
     display: inline-block;
-    width: 50px;
+    width: auto;
+}
+
+.country img {
+    display: block;
 }
 
 
@@ -79,9 +97,6 @@ body {
 }
 
 
-/*-----------------content----------------------*/
-
-
 /*-----------------mainMenu----------------------*/
 
 .mainMenu {
@@ -90,37 +105,79 @@ body {
     border-bottom: 1px solid black;
 }
 
-.mainMenu li {
+.mainMenu>ul>li {
     list-style-type: none;
-    display: inline-block;
+    float: left;
 }
 
-.mainMenu li a {
+.mainMenu>ul>li>a {
     display: block;
-    width: 100px;
-    height: inherit;
+    margin-left: 60px;
     color: white;
     text-decoration: none;
     text-align: center;
     line-height: 25px;
 }
 
+.mainMenu li>ul {
+    position: absolute;
+    top: 31px;
+    right: -26px;
+    background: #333333;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.mainMenu li:hover ul {
+    height: 220px;
+}
+
+.mainMenu li ul li a {
+    display: block;
+    margin-left: -1px;
+    text-decoration: none;
+    padding: 10px;
+    width: 110px;
+    color: white;
+}
+
+.arrow {
+    position: relative;
+}
+
+li.arrow > a::before {
+    content: "";
+    display: block;
+    background: url("../img/arrow.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+
 /*-------------------content------------------------*/
 
-.content{
+.content {
     overflow: hidden;
     background: white;
 }
 
-.info{
+.info {
     float: left;
     text-align: center;
     border-right: 1px solid gray;
     padding: 15px;
     background: #edeef0;
-    height: inherit;
+    height: 620px;
 }
-.news{
+
+.news {
     float: right;
     text-align: center;
     border-left: 1px solid gray;
@@ -128,12 +185,22 @@ body {
     background: #edeef0;
 }
 
-.info ul li,.news ul li{
+.info ul li,
+.news ul li {
     padding-bottom: 10px;
 }
 
-.center{
+.center {
     width: 545px;
     background: white;
 }
 
+
+/*--------------------footer-------------------------*/
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
