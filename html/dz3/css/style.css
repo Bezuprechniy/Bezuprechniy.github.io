@@ -43,7 +43,6 @@ header {
 
 .logo {
     float: left;
-    width: 500px;
     position: relative;
     top: 11px;
 }
@@ -54,9 +53,12 @@ header {
     left: 58px;
 }
 
+.right {
+    float: right;
+}
+
 .contacts {
-    float: left;
-    width: 460px;
+    float: right;
     text-align: right;
     margin-bottom: 20px;
 }
@@ -72,9 +74,9 @@ header {
 
 .country {
     float: right;
-    width: 369px;
     font-size: 11px;
     text-align: center;
+    clear: both;
 }
 
 .country li {
@@ -83,8 +85,8 @@ header {
     width: auto;
 }
 
-.country img {
-    display: block;
+.country p {
+    text-decoration: underline;
 }
 
 
