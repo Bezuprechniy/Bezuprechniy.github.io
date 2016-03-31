@@ -134,10 +134,6 @@ header::after {
     margin-left: 128px;
 }
 
-.mainMenu ul:first-child li {
-    padding: 0 17px;
-}
-
 .mainMenu ul:first-child li:hover {
     line-height: 25px;
     height: 25px;
@@ -160,7 +156,6 @@ header::after {
     display: inline-block;
     list-style-type: none;
     line-height: 35px;
-    padding-right: 6px;
 }
 
 .mainMenu a {
@@ -168,6 +163,7 @@ header::after {
     display: block;
     text-decoration: none;
     color: #b1bcc0;
+    padding: 0 17px;
 }
 
 .counter {
