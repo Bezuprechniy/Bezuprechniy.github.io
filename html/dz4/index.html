@@ -5,52 +5,63 @@
     <meta charset="utf-8">
     <title>Cadastre</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.createElement("aside");
+        document.createElement("header");
+        document.createElement("footer");
+        document.createElement("section");
+        document.createElement("aside");
+        document.createElement("nav");
+    </script>
 </head>
 
 <body>
+
+    <!--HEADER-->
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Meu YouBike</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Ajuda</a></li>
-                <li><a href="#">Minhas Ofertas</a></li>
-                <li><a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="#">Meu YouBike</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="border"><a href="#">Ajuda</a></li>
+            <li class="image">Minhas Ofertas</li>
+            <li class="link">Ola!<a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
+        </ul>
     </header>
-    <form>
-        <h2>Cadastre-se</h2>
-        <div class="facebook">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#">Log in with Facebook</a>
-            <a href="#"><i class="fa fa-angle-right"></i></a>
+    <div class="main">
+        <div class="form">
+            <div class="title">Cadastre-se</div>
+            <div class="fbLink">
+                <a href="#">
+                    <b>Log In</b> with <b>Facebook </b>
+                </a>
+            </div>
+            <div class="OU">
+                <p>OU</p>
+            </div>
+            <form name="registerForm">
+                <input type="text" placeholder="First Name" name="firstName">
+                <input type="text" placeholder="Last Name" name="lastName">
+                <input type="text" placeholder="Email Address" name="email">
+                <input type="password" placeholder="Choose Password" name="choosePassword">
+                <input type="password" placeholder="Password Confirm" name="confirmPassword">
+                <div class="submits">
+                    <label>
+                        <input type="checkbox" id="check">
+                        <span>Send me Youbike updates and tips</span></label>
+                </div>
+                <label>
+                    <input type="button" value="Create my Account" id="button">
+                </label>
+            </form>
+            <div class="otherText">
+                <p> By clicking the button above, you agree to the terms of Service</p>
+                <p> Xiew our Privacy Policy </p>
+            </div>
         </div>
-        <div class="OU">
-            <div class="evil"></div>
-            <span>OU</span>
-            <div class="evil"></div>
-        </div>
-        <div class="registerForm">
-            <input type="text" placeholder="First Name" id="name">
-            <input type="text" placeholder="Last Name" id="surname">
-            <input type="email" placeholder="Email Address" id="email">
-            <input type="password" placeholder="Choose Password" id="choose">
-            <input type="password" placeholder="Password Confirm" id="confirm">
-        </div>
-        <div class="submits">
-            <label>
-                <input type="checkbox" id="check"> Send me Youbike updates and tips</label>
-            <label>
-                <input type="button" value="Create my Account" id="button">
-            </label>
-        </div>
-        <p> By clicking the button above, you agree to the terms of Service Xiew our Privacy Policy </p>
-    </form>
+    </div>
 </body>
 
 </html>
